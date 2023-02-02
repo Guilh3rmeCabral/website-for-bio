@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh; /*Altura total da tela*/
 }
 
 body * {
@@ -155,4 +156,15 @@ footer {
   padding: 24px 0px;
   text-align: center; /*Sempre o texto vai ser alinhado assim*/
   font-size: 13px;
+}
+
+/*Media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-pc.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-pc-light.jpg);
+  }
 }
